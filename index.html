@@ -25,10 +25,16 @@
                 padding: 10px;
                 border-radius: 5px;
             }
+            input[type="text"], input[type="number"]{
+                padding: 8px; 
+                width: 200px; 
+                border: 1px solid #ccc; 
+                border-radius: 4px;
+            }
         </style>
     </head>
     <body>
-        <form>
+        <form action="daftar.php" method="POST">
             <table>
                 <tr>
                     <td colspan="2" style="text-align: center; font-size: 24px; font-weight: bold; padding-bottom: 20px;">
@@ -37,15 +43,19 @@
                 </tr>
                 <tr>
                     <td>Nama Depan:</td>
-                    <td><input type="text" required style="padding: 8px; width: 200px; border: 1px solid #ccc; border-radius: 4px;"></td>
+                    <td><input type="text" name="nama_depan" required></td>
                 </tr>
                 <tr>
                     <td>Nama Belakang:</td>
-                    <td><input type="text" required style="padding: 8px; width: 200px; border: 1px solid #ccc; border-radius: 4px;"></td>
+                    <td><input type="text" name="nama_belakang" required></td>
                 </tr>
                 <tr>
                     <td>Asal Kota:</td>
-                    <td><input type="text" required style="padding: 8px; width: 200px; border: 1px solid #ccc; border-radius: 4px;"></td>
+                    <td><input type="text" name="asal_kota" required></td>
+                </tr>
+                <tr>
+                    <td>Umur:</td>
+                    <td><input type="number" name="umur" required></td>
                 </tr>
                 <tr>
                     <td colspan="2" style="text-align: center; padding-top: 20px;">
